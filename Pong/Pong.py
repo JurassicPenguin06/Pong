@@ -148,7 +148,7 @@ while not game_ended:
     window.blit(ball_img, (math.ceil(ball_rect.x), math.ceil(ball_rect.y)))
     player_score = player_score_font.render(str(player_score_value), True, (255, 255, 255))
     enemy_score = enemy_score_font.render(str(enemy_score_value), True, (255, 255, 255))
-    window.blit(player_score, (64, 0))
+    window.blit(player_score, (32, 0))
     window.blit(enemy_score, (WINDOW_WIDTH-64, 0))
     pygame.display.update()
     dt = clock.tick(FPS)
